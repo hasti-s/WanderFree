@@ -56,13 +56,9 @@ export default class MainPanel extends React.Component {
   };
 
   _onImageClick = (route, name) => {
-      this.setState({
-          nextPlace: name,
-          showTransitionImage: true
-      });
-      setTimeout(() => {
-          this.props.history.push(route);
-      }, 1000);
+      
+    this.props.history.push(route);
+      
   }
 
   _changeModeHandler = (newMode) => {

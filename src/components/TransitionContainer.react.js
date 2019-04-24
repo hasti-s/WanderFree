@@ -21,9 +21,11 @@ const TransitionContainer = (props) => {
                 {
                     position: 'absolute',
                     zIndex: 100,
-                    justifyContent: 'center',
+                    flexDirection: 'row',
+                    justifyContent: 'flex-end',
                     height: 500,
-                    width: 600,
+                    right: 0,
+                    width: 800,
                     transform: [{
                         translate: [0, 0, -200]
                     }]
@@ -46,9 +48,7 @@ const styles = StyleSheet.create({
         borderWidth: 5,
         borderColor: 'gray',
         height: 200,
-        width: 400,
         padding: 20,
-        width: 800,
         flex: 1, 
         flexDirection: 'column',
         alignItems: 'center',
@@ -61,12 +61,9 @@ const styles = StyleSheet.create({
     },
     mainPanel: {
         flexDirection: 'row',
-        width: 4096,
         height: 300,
         backgroundColor: 'transparent',
-        justifyContent: 'space-around',
         alignItems: 'center',
-        padding: 20,
     },
 })
 
